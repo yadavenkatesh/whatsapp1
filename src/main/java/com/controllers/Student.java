@@ -23,9 +23,6 @@ public class Student extends Passport {
 	@Column(name = "clg")
 	private String college;
 
-	public Student(String college) {
-		this.college = college;
-	}
 /*	private List<Address> cities;
 
 	private Passport ppt;

@@ -17,8 +17,6 @@
 		name="college" value="CBIT"></constructor-arg> </bean> -->
 
 	<bean id="std" class="com.controllers.Student" scope="prototype" init-method="init" destroy-method="destroy">
-		<!-- <property name="college" value="Aurora"></property> -->
-		<constructor-arg index="0" value="Aurora"></constructor-arg>
 	</bean>
 	<bean id="pptbean" class="com.controllers.Passport"   scope="prototype">
 	</bean>

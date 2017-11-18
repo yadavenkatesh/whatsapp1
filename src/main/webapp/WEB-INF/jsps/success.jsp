@@ -20,6 +20,7 @@ function editButton(studentId) {
 }
 </script>
 <body>
+<a href="<c:url value="/j_spring_security_logout" />">logout</a>
 <form action="">
 <table border="1" />
 <tr>

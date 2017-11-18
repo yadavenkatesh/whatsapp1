@@ -33,6 +33,21 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
+	@RequestMapping(value="forwardToLoginPage")
+	public String forwardToLoginPage() {
+		return "login";
+	}
+	
+	@RequestMapping(value="loginFail")
+	public String forwardToLoginFailPage(Model model) {
+		model.addAttribute("message", "Login failed!!");
+		return "login";
+	}
+	
+	@RequestMapping(value="logout")
+	public String forwardToLogout(Model model) {
+		return "Home";
+	}
 	@RequestMapping(value = "testIoc")
 	public String testSpringIoc() {
 /*
